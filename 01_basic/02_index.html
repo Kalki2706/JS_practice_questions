@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Window</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <button type="button" onclick="main()">print</button>
+
+    <script>
+      // Printing page content
+      function main() {
+        window.print();
+      }
+
+      // Printing Content of Page in Console
+      let elements = document.querySelectorAll('body');
+
+      for (i = 0; i < elements.length; i++) {
+        console.log(elements[i].innerText);
+      }
+    </script>
+  </body>
+</html>
